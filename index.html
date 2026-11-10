@@ -26,7 +26,22 @@
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
   </style>
 </head>
-<body>
+
+<script>
+document.addEventListener('click', function(event) {
+  const link = event.target.closest('a[href*="wa.me/"]');
+
+  if (link && typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18565865191/NWQcCO3xzrUdEOe98pRF',
+      'value': 1.0,
+      'currency': 'BRL'
+    });
+  }
+});
+</script>
+
+  <body>
 <header class="top"><div class="container nav"><div class="brand">YSAAK BANDEIRA <small>Advocacia · OAB/CE 51.499</small></div><nav class="links" aria-label="Menu principal"><a href="#atuacao">Áreas de atuação</a><a href="#sobre">Sobre</a><a href="#informacoes">Informações</a><a href="#contato">Contato</a></nav></div></header>
 <main>
 <section class="hero"><div class="container hero-grid"><div><div class="eyebrow">Atendimento jurídico online em todo o Brasil</div><h1>Ysaak Bandeira | Advocacia Previdenciária e Trabalhista.</h1><p class="lead">Atuação em Direito Previdenciário, Trabalhista e Cível, com atenção especial a benefícios do INSS, BPC/LOAS, salário-maternidade e benefícios por incapacidade.</p><p>Atendimento online em todo o Brasil · Referência no Cariri, Ceará</p><div class="actions"><a class="button primary" href="#atuacao">Conheça as áreas de atuação</a><a class="button secondary" href="#contato">Informações de contato</a></div></div><aside class="hero-card"><div class="eyebrow" style="color:#dbc397">Atendimento jurídico</div><h2>Ysaak Bandeira</h2><p>Advogado inscrito na Ordem dos Advogados do Brasil, Seccional Ceará.</p><div class="rule"></div><p><strong>OAB/CE 51.499</strong><br>Direito Previdenciário, Trabalhista e Cível</p><p style="font-size:.85rem">Cada situação exige análise individualizada dos fatos e dos requisitos legais.</p></aside></div></section>
